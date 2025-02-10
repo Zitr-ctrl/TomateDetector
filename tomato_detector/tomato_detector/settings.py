@@ -100,6 +100,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+import os
+
+# Archivos estáticos (CSS, JS, imágenes)
+STATIC_URL = '/static/'  # Ruta base para los archivos estáticos
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),  # Carpeta "static" dentro del proyecto
+]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
