@@ -1,38 +1,53 @@
-🌱 TomateDetector
+# 🍅 TomateDetector
 
-TomateDetector es una aplicación web basada en Django que utiliza una IA entrenada para discriminar entre tomates maduros e inmaduros mediante una cámara web en tiempo real.
-🔎 Descripción
+**TomateDetector** es una aplicación web desarrollada en **Django** que utiliza una red neuronal convolucional para detectar y clasificar tomates maduros e inmaduros mediante una cámara web en tiempo real.
 
-Esta solución en tiempo real detecta tomates usando la cámara web, los recorta y clasifica automáticamente si están maduros o inmaduros mediante un modelo de ML/IA.
+---
 
-Principales características:
+## 📌 Descripción
 
-    Interfaz web con stream de video
+Este proyecto combina visión por computadora con aprendizaje profundo para ofrecer una solución sencilla y eficaz a pequeños agricultores, productores o investigadores que necesiten clasificar tomates automáticamente.
 
-    Detección de tomates en cuadro
+---
 
-    Clasificación de madurez con IA
+## 📷 Características
 
-    API REST para integración externa
+- Detección en vivo desde cámara web
+- Clasificación automática de tomates: `maduro` o `inmaduro`
+- Interfaz web amigable
+- API REST para envío de imágenes y predicción
+- Entrenamiento personalizado del modelo (opcional)
 
-🧩 Tabla de Contenidos
+---
 
-    Demo
+## ⚙️ Requisitos
 
-    Requisitos
+- Python ≥ 3.8  
+- Django ≥ 3.2  
+- OpenCV  
+- PyTorch o TensorFlow (según el modelo entrenado)  
+- Otros en `requirements.txt`
 
-    Instalación
+---
 
-    Uso
+## 🚀 Instalación
 
-    Arquitectura
+```bash
+# Clonar el repositorio
+git clone https://github.com/Zitr-ctrl/TomateDetector.git
+cd TomateDetector
 
-    Modelo
+# Crear entorno virtual
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
 
-    API REST
+# Instalar dependencias
+pip install -r requirements.txt
 
-    Entrenamiento
+# Migrar base de datos
+python manage.py migrate
 
-    Contribuciones
+# Colocar el modelo entrenado en: media/models/model.pth
 
-    Licencia
+# Iniciar el servidor
+python manage.py runserver
