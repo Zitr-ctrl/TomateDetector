@@ -51,14 +51,3 @@ python manage.py migrate
 
 # Iniciar el servidor
 python manage.py runserver
-´´´
----
-## 🌐 Uso
-
-Abre tu navegador en: http://localhost:8000
-
-Inicia la cámara web desde la interfaz.
-
-El sistema detectará y clasificará tomates en tiempo real.
-
-Resultado visible con etiquetas (maduro, inmaduro) y recuadros en pantalla.
